@@ -1,0 +1,88 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>charity: water - Give Water, See the Proof</title>
+        
+        <!-- Tailwind CSS for styling -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        <!-- Adobe Fonts (Proxima Nova) -->
+        <link rel="stylesheet" href="https://use.typekit.net/aiy7jym.css">
+        
+        <style>
+            /* Custom styles based on your brand guide */
+            body {
+                /* Use Proxima Nova as the primary font */
+                font-family: 'proxima-nova', sans-serif;
+                background-color: #FFFFFF;
+            }
+
+            /* Custom brand colors for use with Tailwind */
+            .brand-yellow-text { color: #FFC907; }
+            .brand-blue-text { color: #77A8BB; }
+            .brand-gray-text { color: #1A1A1A; }
+            /* Corrected the invalid hex code for the background */
+            .bg-brand-yellow-bg { background-color: #FFF7E0; } 
+            .bg-brand-yellow-button { background-color: #FFC907; }
+        </style>
+    </head>
+    <body class="brand-gray-text antialiased">
+
+        <!-- Main Container for the two-column layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+
+            <!-- Left Column: Text Content & CTA -->
+            <div class="flex flex-col">
+                <!-- Yellow Header Band -->
+                <header class="bg-brand-yellow-button p-8 shadow-md relative">
+                    <!-- charity: water logo -->
+                    <!-- When you download this code, place your logo image in the same folder and use the line below -->
+                    <!-- <img src="https://www.charitywater.org/static/img/logo-dark.png" alt="charity: water logo" class="h-7"> -->
+                    <img src="charitywater_logo_horizontal_AllBlack.png" alt="charity: water logo" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 sm:w-48 transition-transform duration-300 hover:scale-110 hover:rotate-2">
+                </header>
+
+                <!-- Main Content Area with pale yellow background -->
+                <div class="bg-brand-yellow-bg p-8 sm:p-12 md:p-16 flex flex-col justify-center flex-grow">
+                    <!-- Main Content -->
+                    <main class="flex-grow flex flex-col justify-center">
+                        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+                            Give <span class="brand-blue-text">Water</span><br>
+                            See the <span class="brand-yellow-text">Proof</span>
+                        </h1>
+                        <p class="mt-6 text-lg md:text-xl max-w-md">
+                            100% of your donation brings access to clean <span class="brand-blue-text font-semibold">water</span> that can transform lives. We'll show you the GPS coordinates to prove it.
+                        </p>
+                        <div class="mt-12 flex flex-col items-start">
+                            <p class="text-3xl font-bold mb-6">Change lives</p>
+                            <a href="#" class="px-8 py-4 bg-brand-yellow-button text-black font-bold uppercase rounded-full shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                                Donate Now
+                             </a>
+                        </div>
+                    </main>
+
+                    <!-- Footer for the left panel -->
+                    <footer class="mt-12 text-gray-500 text-sm">
+                        <p>&copy; 2024 charity: water. All rights reserved.</p>
+                    </footer>
+                </div>
+            </div>
+
+            <!-- Right Column: Image -->
+            <!-- This column is hidden on small screens (mobile) and visible on large screens -->
+            <div class="hidden lg:block w-full h-screen">
+                <!-- When you download this code, place your hero image in the same folder and use the line below -->
+                <!-- <img src="Rwanda-2018-march-cw-cubbygraham-0613.jpg" alt="A yellow jerry can being filled with clean water from a tap." class="w-full h-full object-cover"> -->
+                <img 
+                    src="Rwanda-2018-march-cw-cubbygraham-0613.jpg" 
+                    alt="A yellow jerry can being filled with clean water from a tap."
+                    onerror="this.onerror=null;this.src='https://placehold.co/1200x1800/cccccc/ffffff?text=Image+Not+Found';"
+                    class="w-full h-full object-cover"
+                >
+            </div>
+
+        </div>
+
+    </body>
+    </html> 
